@@ -5,7 +5,7 @@ function packFirstLastName(){
 }
 
 function showMe(){
-    var queryString = location.search.substring(1); // Obtain the queryString (Data after ?)
+    var queryString = decodeURIComponent(location.search.substring(1)); // Obtain the queryString (Data after ?)
     var a = queryString.split('|') // Split the query string into an array on the pipe
     for(x in a){ // Iterate through the entire loop. X is an integer that corresponds to the index  
         alert(a[x]);
