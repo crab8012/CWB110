@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="scripts/formscripts.js"></script>
+        <title>Ugly Pizza Form</title>
+    </head>
+    <body>
+        <form action='php/catch.php' method="POST">
+            <p>
+            Size:
+            <select name='size'>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+            </p>
+            <hr>
+            <p>
+            <input type='radio' name='recieve_method' value='delivery'>Delivery
+            <input type='radio' name='recieve_method' value='Digiorno'>Carryout
+            </p>
+            <hr>
+            <p>
+                <input name='toppings' type='checkbox' value='pepperoni'>Pepperoni</option>
+                <input name='toppings' type='checkbox' value='sausage'>Sausage</option>
+                <input name='toppings' type='checkbox' value='cheese'>Extra Cheese</option>
+                <input name='toppings' type='checkbox' value='pineapple'>Pineapple</option>
+                <input name='toppings' type='checkbox' value='bacon'>Bacon</option>
+                <hr>
+                <input name='toppings' type='checkbox' value='mushrooms'>Mushrooms</option>
+                <input name='toppings' type='checkbox' value='olives'>Olives</option>
+                <input name='toppings' type='checkbox' value='jalapeno'>Jalapeno Peppers</option>
+                <input name='toppings' type='checkbox' value='bell'>Bell Peppers</option>
+                <input name='toppings' type='checkbox' value='hotsauce'>Generic® Hot Sauce</option>
+            </p>
+            <hr>
+            <p>Box Color: <input name='box_color' type='color'></p>
+            <hr>
+            <p>
+                <input type='tel' name='callback_phone' placeholder='Phone Number'>
+            </p>
+            <hr>
+            <p>
+                <label for='email'>Email Address for Reciept</label>
+                <input type='email' id='email' name='email' placeholder='person@email.com'>
+            </p>
+            <hr>
+            <p>
+                Pickup Time:<input type='datetime-local' id='pickup_time' name='pickup_time'>
+            </p>
+            <hr>
+            <p>
+                <textarea name='extra_instructions' id='extra_instructions' placeholder='Extra Instructions' rows='4' cols='50'></textarea>
+            </p>
+            <hr>
+            <input type='submit'>SUBMIT</input>
+        </form>
+    </body>
+</html>

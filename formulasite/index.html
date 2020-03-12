@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <meta charset=UTF-8>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/formulas.js"></script>
+    <head>
+        <title>Jordan Petersen - Web Authoring</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-dark">
+            <ul class="navbar-nav">
+                <li class="navbar-brand">Javascript Formulas</img>
+                <li class="nav-item"><a href="../index.html" class="btn btn-outline-info" role="button">Projects Home</a></li>
+            </ul>
+        </nav>
+
+        <h1>Mathematical Formulas</h1>
+        <h4>Pythagorean Theorem</h4>
+        <form>
+            <div class="row">
+              <div class="col-md-3">
+                <input type="text" class="form-control" id="leg1" placeholder="First Leg">
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" id="leg2" placeholder="Second Leg">
+              </div>
+              <div class="col-md-1">
+                <label id="pythagoreanANS">Hypotenuse: ???</label>
+              </div>
+              <div class="col-md-1">
+                <button type="button" class="btn btn-primary mb-2" onclick="solvePythagorean()">Submit</button>
+              </div>
+            </div>
+        </form>
+
+        <h4>Speed from Distance and Time</h4>
+        <form>
+            <div class="row">
+              <div class="col-md-3">
+                <input type="text" class="form-control" id="distance" placeholder="Distance">
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" id="time" placeholder="Time">
+              </div>
+              <div class="col-md-1">
+                <label id="speedANS">Speed: ???</label>
+              </div>
+              <div class="col-md-1">
+                <button type="button" class="btn btn-primary mb-2" onclick="solveSpeedFromDistance()">Submit</button>
+              </div>
+            </div>
+        </form>
+
+        <h4>Voltage using Ohm's Law</h4>
+        <form>
+            <div class="row">
+              <div class="col-md-3">
+                <input type="text" class="form-control" id="amps" placeholder="Current (Amps)">
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" id="ohms" placeholder="Resistance (Ohms)">
+              </div>
+              <div class="col-md-1">
+                <label id="ohmsLawANS">Voltage: ???</label>
+              </div>
+              <div class="col-md-1">
+                <button type="button" class="btn btn-primary mb-2" onclick="solveVoltageOhmsLaw()">Submit</button>
+              </div>
+            </div>
+        </form>
+    </body>
+</html>

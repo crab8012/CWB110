@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <meta charset=UTF-8>
+    <script>var names=['yes','no']</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/listOperations.js"></script>
+    <head>
+        <title>Jordan Petersen - Web Authoring</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md bg-dark">
+            <ul class="navbar-nav">
+                <li class="navbar-brand">In-Class 03/11/2020</img>
+                <li class="nav-item"><a href="../index.html" class="btn btn-outline-info" role="button">Projects Home</a></li>
+            </ul>
+        </nav>
+
+        <h1>Mathematical Formulas</h1>
+        <h4>Pythagorean Theorem</h4>
+        <form>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+              <div class="col-md-2">
+                <input type="button" onclick="addName()" value="Add">
+              </div>
+              <div class="col-md-2">
+                <input type="button" onclick="showNames()" value="Show All">
+              </div>
+            </div>
+        </form>
+        <div id="list"></div>
+
+        <br><br><br><hr>
+        <form>
+            <select id="colleges">
+                <option value="CCA">Community College of Aurora</option>
+                <option value="CCD">Community College of Denver</option>
+                <option value="CUBOULDER">CU Boulder</option>
+                <option value="DU">Denver University</option>
+            </select>
+        </form>
+    </body>
+</html>
