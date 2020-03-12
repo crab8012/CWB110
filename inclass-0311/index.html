@@ -18,8 +18,8 @@
             </ul>
         </nav>
 
-        <h1>Mathematical Formulas</h1>
-        <h4>Pythagorean Theorem</h4>
+        <h1>Array Manipulation</h1>
+        <h4>Names Array</h4>
         <form>
             <div class="row">
               <div class="col-md-6">
@@ -37,12 +37,14 @@
 
         <br><br><br><hr>
         <form>
-            <select id="colleges">
-                <option value="CCA">Community College of Aurora</option>
-                <option value="CCD">Community College of Denver</option>
-                <option value="CUBOULDER">CU Boulder</option>
-                <option value="DU">Denver University</option>
+            <select id="colleges" onchange="changedSelection()">
+              <option value="NONE">Select a College</option>
+              <option value="CCA">Community College of Aurora</option>
+              <option value="CCD">Community College of Denver</option>
+              <option value="CUBOULDER">CU Boulder</option>
+              <option value="DU">Denver University</option>
             </select>
         </form>
+        <div id="selection-result"></div>
     </body>
 </html>

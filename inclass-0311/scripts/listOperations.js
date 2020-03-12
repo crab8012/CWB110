@@ -15,3 +15,9 @@ function showNames(){
     }
     document.getElementById("list").innerHTML = list;
 }
+
+function changedSelection(){
+    selectBox = document.getElementById("colleges")
+    idx = selectBox.selectedIndex;
+    document.getElementById("selection-result").innerHTML = "Value: " + selectBox.options[idx].value + "<br>Text: " + selectBox.options[idx].text;
+}
