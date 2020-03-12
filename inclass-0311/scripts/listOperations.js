@@ -1,4 +1,4 @@
-var names=['yes','no']
+var names=[]
 
 function addName(){
     console.log(window.names[1])
