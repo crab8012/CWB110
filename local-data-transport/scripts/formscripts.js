@@ -13,8 +13,4 @@ function showMe(){
         var value = pair.split[1]
         info.innerHTML = info.innerHTML + "KEY: " + key + "VALUE: " + value + "<br><hr>"
     }
-    var lengthA = a.length;
-    var middle = Math.floor((lengthA/2));
-
-    alert("The middle value is: " + a[middle])
 }
